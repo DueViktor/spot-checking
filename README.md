@@ -23,3 +23,10 @@ Perform 5 fold crossvalidation of the data splitted into a dataset for cross-val
 9. QuadraticDiscriminantAnalysis
 
 ## Regresion ...
+
+
+Inspiration:
+- https://machinelearningmastery.com/spot-check-regression-machine-learning-algorithms-python-scikit-learn/
+- https://machinelearningmastery.com/spot-check-machine-learning-algorithms-in-python/
+- https://thatascience.com/learn-machine-learning/spot-checking/
+- https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
