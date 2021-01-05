@@ -30,3 +30,4 @@ Inspiration:
 - https://machinelearningmastery.com/spot-check-machine-learning-algorithms-in-python/
 - https://thatascience.com/learn-machine-learning/spot-checking/
 - https://scikit-learn.org/stable/auto_examples/classification/plot_classifier_comparison.html
+- https://www.reddit.com/r/MachineLearning/comments/kqm5pn/p_which_machine_learning_classifiers_are_best_for/
