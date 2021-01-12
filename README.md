@@ -1,12 +1,12 @@
 # spot-checking
 
-Should take a datasat and the y-column and then do the following:
+A repo build for the purpose of spot-checking (proof-of-concept) for classification and regression problems.
 
-1. Preprocess with appropiate values
-2. One-hot all categorical values
-3. Scale values of type int and float
+Should take a datasat, method and the y-column and then do the following:
 
-You should probably pass the option to choose regression or classification
+1. Preprocess with appropiate values. Scaling
+2. One-hot all categorical values.
+3. Scale values of type int and float.
 
 Perform 5 fold crossvalidation of the data splitted into a dataset for cross-validation aswell as one for the final testing.
 

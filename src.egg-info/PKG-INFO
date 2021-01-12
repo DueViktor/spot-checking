@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: src
+Version: 0.1.0
+Summary: A package for spot-checking problems
+Home-page: UNKNOWN
+Author: DueViktor
+Author-email: viktorduep@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
