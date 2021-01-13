@@ -1,22 +1,22 @@
 from sklearn.pipeline import make_pipeline
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from src.evaluator import ClassificationEvaluator, RegressionEvaluator
 
 
 class Pipe:
-    def init(self, method: str) -> None:
+    def __init__(self, method: str) -> None:
         self.method = method
-        self.pipe = None
-
-    def create_pipe(self):
-        self.classification_pipe() if self.method == 'classification' else self.regression_pipe()
+        self.pipe = self.classification_pipe(
+        ) if self.method == 'classification' else self.regression_pipe()
 
     def classification_pipe(self) -> None:
-        self.pipe = make_pipeline(RandomForestClassifier())
+        return make_pipeline(RandomForestClassifier())
 
     def regression_pipe(self) -> None:
-        self.pipe = make_pipeline(RandomForestRegressor())
+        return make_pipeline(RandomForestRegressor())
 
     def evaluate(self, X_train, y_train, X_test, y_test) -> None:
-        self.create_pipe()
         self.pipe.fit(X_train, y_train)
-        print(self.pipe.score(X_test, y_test))
+        evaluator = ClassificationEvaluator(
+        ) if self.method == 'classification' else RegressionEvaluator()
+        evaluator.evaluate(X_test, y_test, self.pipe)
