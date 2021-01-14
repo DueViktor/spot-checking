@@ -1,2 +1,4 @@
-src.egg-info
 __pycache__
+*egg-info
+*.lock
+*.save
