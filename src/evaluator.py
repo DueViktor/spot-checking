@@ -14,7 +14,7 @@ class ClassificationEvaluator:
     def __init__(self) -> None:
         pass
 
-    def evaluate(self, X_test, y_test, pipe):
+    def evaluate(self, pipe, X_test, y_test):
         preds = Evaluator(pipe).predictor(X_test)
         print(classification_report(y_test, preds))
 
@@ -23,6 +23,6 @@ class RegressionEvaluator:
     def __init__(self) -> None:
         pass
 
-    def evaluate(self, X_test, y_test, pipe):
+    def evaluate(self, pipe, X_test, y_test):
         preds = Evaluator(pipe).predictor(X_test)
         print(3)
